@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --netflix-red: red;
+  --netflix-white: #fff;
+}
+
+body {
+  background: #222;
+  color: var(--netflix-white);
+  font-family: "Martel Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.header__background-image {
+  background: url("./images/netflix-background.jpg");
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+}
+
+.header__background-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(black, black);
+  opacity: 0.6;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.header__logo {
+  width: 7rem;
+  margin: 1rem;
+}
+
+.header__btn,
+.header__get-started-btn,
+.section-f__get-started-btn {
+  color: white;
+  text-decoration: none;
+  background: var(--netflix-red);
+  border: 1px solid var(--netflix-red);
+  border-radius: 4px;
+  outline: none;
+}
+
+.header__btn {
+  margin-right: 1rem;
+  padding: 2px 5px;
+}
+
+.header__get-started-btn,
+.section-f__get-started-btn {
+  padding: 10px 16px;
+}
+
+main section {
+  background: black;
+}
+
+main img {
+  width: 90%;
+  background-size: cover;
+  margin-top: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  color: var(--netflix-white);
+  text-align: center;
+  line-height: 1;
+  height: 70vh;
+  padding: 1rem 2rem;
+  height: 100%;
+}
+
+section > * {
+  margin: 0.9rem;
+}
+
+.header__section-a-input,
+.section-f__input {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+}
+
+.section-f ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-f ul li {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  background: #333;
+  width: 100vw;
+  height: 3rem;
+  text-align: left;
+  align-items: center;
+  padding-left: 1.5rem;
+  margin: 0.3rem 0;
+}
+
+.section-f ul li span {
+  position: absolute;
+  right: 1rem;
+  font-size: 3rem;
+}
+
+footer {
+  margin-top: 0.5rem;
+  background: black;
+  color: #666;
+  padding: 3rem;
+  height: 65vh;
+}
+
+footer p {
+  letter-spacing: 1px;
+}
+
+footer ul {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+
+footer li {
+  list-style-type: none;
+  font-size: 0.905rem;
+  margin-bottom: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+@media (max-width: 950px) {
+  section {
+    flex-wrap: row;
+  }
+}
