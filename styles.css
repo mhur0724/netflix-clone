@@ -255,20 +255,17 @@ a {
   .section-faq {
     justify-content: center;
     height: 110vh;
-    border: 1px solid coral;
   }
   .section-faq ul {
     justify-content: space-between;
     max-width: 825px;
     height: 500px;
-    border: 1px solid red;
   }
   .section-faq ul li {
     flex: 1;
     width: 100%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    border: 1px solid white;
   }
 }
 
@@ -333,4 +330,8 @@ a {
   footer ul {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.expanded-li {
+  color: red;
 }
