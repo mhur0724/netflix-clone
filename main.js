@@ -6,5 +6,7 @@ faqLi.forEach(item => {
 })
 
 function expandLi(e) {
-    e.target.classList.toggle('expanded-li')
+  e.target.parentNode.lastElementChild.classList.toggle('closed-li');
+  e.target.parentNode.lastElementChild.classList.toggle('expanded-li');
+  e.target.firstElementChild.classList.toggle('li-span');
 }
