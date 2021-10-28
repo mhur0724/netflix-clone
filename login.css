@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background: #666;
+}
+
+header {
+  background: black;
+  padding: 0.5rem;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#footer {
+  margin-top: 1px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 33vh;
+  background: black;
+  padding: 1.5rem;
+}
+
+.sign-in__header__logo {
+  height: 4rem;
+}
+
+.sign-in__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  height: 70vh;
+}
+
+h1 {
+  width: 90vw;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sign-in__input,
+.sign-in__button {
+  width: 90vw;
+  height: 3.25rem;
+  border-radius: 4px;
+  border: none;
+  background: #333;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.sign-in__button {
+  margin: 2rem;
+  margin-bottom: 1rem;
+  background: red;
+  color: white;
+  font-size: 1rem;
+}
+.under-button {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.sign-in__ul {
+  margin-top: 1.25rem;
+}
+.sign-in__ul li {
+  color: #666;
+  list-style-type: none;
+  margin: 1rem 0;
+  text-align: left;
+  width: 90vw;
+}
+
+#sign-up-now {
+  color: white;
+  text-decoration: none;
+}
+
+#learn-more {
+  color: rgb(48, 60, 233);
+  text-decoration: none;
+}
+
+footer,
+footer p a,
+footer ul li a {
+  color: #666;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin: 0.5rem 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer p a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 501px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 739px) {
+  body {
+    background: url("./images/netflix-background.jpg");
+  }
+  header {
+    background: rgba(0, 0, 0, 0);
+  }
+  .sign-in__section {
+    background: rgba(0, 0, 0, 0.9);
+    width: 450px;
+    height: auto;
+    padding: 68px;
+    border-radius: 4px;
+    margin-bottom: 6.5rem;
+  }
+
+  .sign-in__section > * {
+    width: 100%;
+  }
+
+  #sign-in__section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sign-in__ul li {
+    width: auto;
+  }
+  #footer {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
