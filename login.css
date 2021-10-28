@@ -13,11 +13,6 @@ header {
   padding: 0.5rem;
 }
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
 #footer {
   margin-top: 1px;
   position: relative;
@@ -132,13 +127,29 @@ footer p a:hover {
 
 @media (min-width: 739px) {
   body {
-    background: url("./images/netflix-background.jpg");
+    background-image: url("./images/netflix-background.jpg");
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  body::after {
+    content: "";
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(black, black);
+    opacity: 0.6;
   }
   header {
     background: rgba(0, 0, 0, 0);
   }
   .sign-in__section {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.75);
     width: 450px;
     height: auto;
     padding: 68px;
@@ -159,7 +170,7 @@ footer p a:hover {
     width: auto;
   }
   #footer {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.75);
   }
   footer ul {
     display: grid;
